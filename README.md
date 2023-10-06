@@ -1,2 +1,2 @@
 # Easy_Hacktober
-Easy Repos with Hacktober fest labels
+Easy Repos with Hacktoberfest label.
