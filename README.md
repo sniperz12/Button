@@ -1,2 +1,2 @@
-# Easy_Hacktober
+# Button
 Easy Repos with Hacktoberfest label.
