@@ -1,64 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Button Example</title>
     <style>
-        /* Add a bit of spacing and centering for better visual appeal */
-        body {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            height: 100vh;
-            margin: 0;
-        }
+      /* Add a bit of spacing and centering for better visual appeal */
+      body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        margin: 0;
+      }
 
-        h1 {
-            text-align: center;
-        }
+      h1 {
+        text-align: center;
+      }
 
-        /* Basic button style */
-        button {
-            background-color: #007bff;
-            color: #fff;
-            border: 2px solid #696e74;
-            border-radius: 5px;
-            padding: 10px 20px;
-            cursor: pointer;
-            font-size: 16px;
-            margin-bottom: 10px;
-        }
+      /* Basic button style */
+      button {
+        background-color: #007bff;
+        color: #fff;
+        border: 2px solid #696e74;
+        border-radius: 5px;
+        padding: 10px 20px;
+        cursor: pointer;
+        font-size: 16px;
+        margin-bottom: 10px;
+      }
 
-        /* Custom button style */
-        .custom-button {
-            background-color: #28a745; /* Green color */
-            border-color: #218838; /* Darker green for border */
-        }
+      /* Custom button style */
 
-        /* Style for the JavaScript event button */
-        #myButton {
-            background-color: #dc3545; /* Red color */
-            border-color: #c82333; /* Darker red for border */
-        }
+      .alert-btn {
+        border: none;
+      }
+
+      .alert-btn:hover {
+        background-color: #0063e2;
+      }
+
+      .custom-button {
+        background-color: #28a745; /* Green color */
+        border-color: #218838; /* Darker green for border */
+      }
+
+      /* Style for the JavaScript event button */
+      #myButton {
+        background-color: #dc3545; /* Red color */
+        border-color: #c82333; /* Darker red for border */
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <h1>HTML Button Example</h1>
-    
+
     <button>Click Me</button>
 
-    <button onclick="alert('Button Clicked!')">Click Me with Alert</button>
+    <button class="alert-btn" onclick="alert('Button Clicked!')">
+      Click Me with Alert
+    </button>
 
     <button class="custom-button">Custom Button</button>
 
     <button id="myButton">Click Me</button>
 
     <script>
-        document.getElementById("myButton").addEventListener("click", function() {
-            alert("JavaScript Click Event!");
+      document
+        .getElementById("myButton")
+        .addEventListener("click", function () {
+          alert("JavaScript Click Event!");
         });
     </script>
-</body>
+  </body>
 </html>
